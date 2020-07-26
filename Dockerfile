@@ -3,7 +3,7 @@
 FROM fredrikandersson/debian-testing-dev-image-base:testing-2020-07-20
 
 # Basic build/development tools
-RUN apt-get update --quiet --yes && apt-get install --quiet --yes cmake make valgrind cppcheck python python3 python-pip python3-pip
+RUN apt-get update --quiet --yes && apt-get install --quiet --yes cmake make valgrind cppcheck python python3 python3-pip
 # Doxygen
 RUN apt-get update --quiet --yes && apt-get install --quiet --yes doxygen doxygen-latex graphviz
 # Conan package manager
