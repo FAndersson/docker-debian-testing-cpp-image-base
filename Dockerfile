@@ -3,7 +3,7 @@
 FROM fredrikandersson/debian-testing-dev-image-base:2022-05-09
 
 # Basic build/development tools
-RUN apt-get update --quiet --yes && apt-get install --quiet --yes cmake cppcheck make python3 python3-pip valgrind
+RUN apt-get update --quiet --yes && apt-get install --quiet --yes cmake cppcheck make ninja-build python3 python3-pip valgrind
 # Doxygen
 RUN apt-get update --quiet --yes && apt-get install --quiet --yes doxygen doxygen-latex graphviz
 # Pybind11
